@@ -1,6 +1,6 @@
 {
-    "name": "salesforce-mc/fuel-sdk-php",
-    "description": "Salesforce Marketing Cloud Fuel SDK for PHP",
+    "name": "dt-co/fuelsdk-php-7.4fix",
+    "description": "Salesforce Marketing Cloud Fuel SDK for PHP with fix for php 7.4",
     "homepage": "https://developer.salesforce.com/docs/atlas.en-us.mc-sdks.meta/mc-sdks/index-sdk.htm",
     "license": "MIT",
     "type": "library",
