@@ -519,7 +519,7 @@ class ET_Client extends SoapClient
 	 * @param integer $one_way Future use
 	 * @return string Soap web service request result
 	 */			
-	function __doRequest($request, $location, $saction, $version, $one_way = 0) 
+	function __doRequest($request, $location, $action, $version, $one_way = 0) 
 	{
 		$doc = new DOMDocument();
 		$doc->loadXML($request);
@@ -541,7 +541,7 @@ class ET_Client extends SoapClient
 			error_log (str_replace($this->getInternalAuthToken($this->tenantKey),"REMOVED",$content));
 		}
 		
-		$headers = array("Content-Type: text/xml","SOAPAction: ".$saction, "User-Agent: ".ET_Util::getSDKVersion());
+		$headers = array("Content-Type: text/xml","SOAPAction: ".$action, "User-Agent: ".ET_Util::getSDKVersion());
 
 		$ch = curl_init();
 		curl_setopt ($ch, CURLOPT_URL, $location);
